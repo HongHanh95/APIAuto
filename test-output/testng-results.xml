@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-11T15:34:36 ICT" name="Default suite" finished-at="2021-07-11T15:34:40 ICT" duration-ms="4654">
+  <suite started-at="2021-07-29T14:53:41 ICT" name="Default suite" finished-at="2021-07-29T14:53:56 ICT" duration-ms="15633">
     <groups>
     </groups>
-    <test started-at="2021-07-11T15:34:36 ICT" name="Default test" finished-at="2021-07-11T15:34:40 ICT" duration-ms="4654">
-      <class name="API.POST">
-        <test-method signature="test_excel_post(java.lang.String, java.lang.String)[pri:0, instance:API.POST@78aab498]" started-at="2021-07-11T15:34:37 ICT" name="test_excel_post" data-provider="getTestData" finished-at="2021-07-11T15:34:40 ICT" duration-ms="3666" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[haithoi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Hanh]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-07-29T14:53:41 ICT" name="Default test" finished-at="2021-07-29T14:53:56 ICT" duration-ms="15633">
+      <class name="API.AssertionsinAPITesting">
+        <test-method signature="postUser3_Excel()[pri:0, instance:API.AssertionsinAPITesting@78aab498]" started-at="2021-07-29T14:53:41 ICT" name="postUser3_Excel" finished-at="2021-07-29T14:53:56 ICT" duration-ms="15555" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_excel_post -->
-      </class> <!-- API.POST -->
+        </test-method> <!-- postUser3_Excel -->
+      </class> <!-- API.AssertionsinAPITesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
