@@ -5,7 +5,7 @@
     <classes>
       <class name="API.AssertionsinAPITesting">
         <methods>
-          <include name="post_400"/>
+          <include name="post_201" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- API.AssertionsinAPITesting -->
     </classes>

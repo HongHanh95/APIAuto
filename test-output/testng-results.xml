@@ -1,13 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6101" started-at="2021-08-07T11:09:30 ICT" finished-at="2021-08-07T11:09:36 ICT">
+  <suite name="Default suite" duration-ms="10478" started-at="2021-08-07T16:06:09 ICT" finished-at="2021-08-07T16:06:19 ICT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6101" started-at="2021-08-07T11:09:30 ICT" finished-at="2021-08-07T11:09:36 ICT">
+    <test name="Default test" duration-ms="10478" started-at="2021-08-07T16:06:09 ICT" finished-at="2021-08-07T16:06:19 ICT">
       <class name="API.AssertionsinAPITesting">
-        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@1f57539]" name="post_400" duration-ms="3976" started-at="2021-08-07T11:09:31 ICT" data-provider="getTestData400" finished-at="2021-08-07T11:09:35 ICT">
+        <test-method status="PASS" signature="post_201(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_201" duration-ms="5110" started-at="2021-08-07T16:06:12 ICT" data-provider="getTestData201" finished-at="2021-08-07T16:06:17 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstName1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lastName1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test005@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[programme1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_201 -->
+        <test-method status="PASS" signature="post_201(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_201" duration-ms="568" started-at="2021-08-07T16:06:17 ICT" data-provider="getTestData201" finished-at="2021-08-07T16:06:17 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstName2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test006@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_201 -->
+        <test-method status="PASS" signature="post_201(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_201" duration-ms="498" started-at="2021-08-07T16:06:17 ICT" data-provider="getTestData201" finished-at="2021-08-07T16:06:18 ICT">
           <params>
             <param index="0">
               <value>
@@ -31,45 +103,127 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[[, , , , , ]]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_201 -->
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_400" duration-ms="420" started-at="2021-08-07T16:06:18 ICT" data-provider="getTestData400" finished-at="2021-08-07T16:06:18 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hanh2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hanh2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[hanhtesst89@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1g]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , , , ]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- post_400 -->
-        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@1f57539]" name="post_400" duration-ms="483" started-at="2021-08-07T11:09:35 ICT" data-provider="getTestData400" finished-at="2021-08-07T11:09:35 ICT">
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_400" duration-ms="389" started-at="2021-08-07T16:06:18 ICT" data-provider="getTestData400" finished-at="2021-08-07T16:06:19 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
+                <![CDATA[2.0]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[hanh2]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[]]>
+                <![CDATA[hanh2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[]]>
+                <![CDATA[hanhtesst90@gmail.com]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[[, , , , , ]]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , , , ]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- post_400 -->
-        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@1f57539]" name="post_400" duration-ms="545" started-at="2021-08-07T11:09:35 ICT" data-provider="getTestData400" finished-at="2021-08-07T11:09:36 ICT">
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_400" duration-ms="362" started-at="2021-08-07T16:06:19 ICT" data-provider="getTestData400" finished-at="2021-08-07T16:06:19 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , , , ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_400 -->
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@421056e5]" name="post_400" duration-ms="386" started-at="2021-08-07T16:06:19 ICT" data-provider="getTestData400" finished-at="2021-08-07T16:06:19 ICT">
           <params>
             <param index="0">
               <value>
@@ -93,7 +247,12 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[[, , , , , ]]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[Accounting1, Accounting2, Statistics1, Statistics2, , , , ]]]>
               </value>
             </param>
           </params>

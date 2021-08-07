@@ -99,12 +99,13 @@ public class AssertionsinAPITesting {
 	}
 
 	@Test(dataProvider = "getTestData201")
-	public void post_201(String firstName, String lastName, String email, String programme, List<String> coursesList)
-			throws IOException, JSONException {
+	public void post_201(String idSheet, String firstName, String lastName, String email, String programme,
+			List<String> coursesList) throws IOException, JSONException {
 		// Request body params
-		requestBodyParams(firstName, lastName, email, programme, coursesList, 201);
+		requestBodyParams(idSheet, "statusCode_200", firstName, lastName, email, programme, coursesList, 201);
 	}
 
+	// TestCase cho trường hợp statusCode = 400
 	@DataProvider
 	public Iterator<Object[]> getTestData400() {
 		TestUtil.getDataFromExcel400();
@@ -113,15 +114,15 @@ public class AssertionsinAPITesting {
 	}
 
 	@Test(dataProvider = "getTestData400")
-	public void post_400(String firstName, String lastName, String email, String programme, List<String> coursesList)
-			throws IOException, JSONException {
+	public void post_400(String idSheet, String firstName, String lastName, String email, String programme,
+			List<String> coursesList) throws IOException, JSONException {
 		// Request body params
-		requestBodyParams(firstName, lastName, email, programme, coursesList, 500);
+		requestBodyParams(idSheet, "statusCode_400", firstName, lastName, email, programme, coursesList, 500);
 	}
 
 	@SuppressWarnings("unchecked")
-	public void requestBodyParams(String firstName, String lastName, String email, String programme,
-			List<String> coursesList, int statusCode) {
+	public void requestBodyParams(String idSheet, String sheetName, String firstName, String lastName, String email,
+			String programme, List<String> coursesList, int statusCode) {
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("firstName", firstName);
 		requestParams.put("lastName", lastName);
@@ -138,14 +139,13 @@ public class AssertionsinAPITesting {
 		System.out.println("PostUsers_Excel response statusCOde: " + response.statusCode());
 
 		if (response.statusCode() == statusCode) {
-			TestUtil.writeData200(email, "OK", "statusCode");
+			TestUtil.writeDataToExcelToSheetName(sheetName, idSheet, "OK", "statusCode");
 		} else {
-			TestUtil.writeData200(email, "NG", "statusCode");
+			TestUtil.writeDataToExcelToSheetName(sheetName, idSheet, "NG", "statusCode");
 		}
 
-		TestUtil.writeData200(email, String.valueOf(response.statusCode()), "ResponseCode");
-		TestUtil.writeData200(email, response.asString(), "Response");
+		TestUtil.writeDataToExcelToSheetName(sheetName, idSheet, String.valueOf(response.statusCode()), "ResponseCode");
+		TestUtil.writeDataToExcelToSheetName(sheetName, idSheet, response.asString(), "Response");
 	}
-	
-	
+
 }
