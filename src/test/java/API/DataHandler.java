@@ -38,15 +38,8 @@ public class DataHandler {
 		FileInputStream file = new FileInputStream(excelFile);
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		// CellType.STRING
-		// sheet.createRow(row);
 		sheet.getRow(row).createCell(col).setCellType(type);
-		// sheet.getRow(1).createCell(4).setCellType(CellType.NUMERIC);
-		// sheet.getRow(1).createCell(5).setCellType(CellType.STRING);
 		sheet.getRow(row).getCell(col).setCellValue(writethis.toString());
-		// sheet.getRow(1).getCell(4).setCellValue(resp.statusCode());
-		// sheet.getRow(1).getCell(5).setCellValue(resp.asString());
-
 		FileOutputStream outFile = new FileOutputStream(excelFile);
 		workbook.write(outFile);
 		workbook.close();

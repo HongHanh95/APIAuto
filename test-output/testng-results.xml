@@ -1,16 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-29T14:53:41 ICT" name="Default suite" finished-at="2021-07-29T14:53:56 ICT" duration-ms="15633">
+  <suite name="Default suite" duration-ms="6101" started-at="2021-08-07T11:09:30 ICT" finished-at="2021-08-07T11:09:36 ICT">
     <groups>
     </groups>
-    <test started-at="2021-07-29T14:53:41 ICT" name="Default test" finished-at="2021-07-29T14:53:56 ICT" duration-ms="15633">
+    <test name="Default test" duration-ms="6101" started-at="2021-08-07T11:09:30 ICT" finished-at="2021-08-07T11:09:36 ICT">
       <class name="API.AssertionsinAPITesting">
-        <test-method signature="postUser3_Excel()[pri:0, instance:API.AssertionsinAPITesting@78aab498]" started-at="2021-07-29T14:53:41 ICT" name="postUser3_Excel" finished-at="2021-07-29T14:53:56 ICT" duration-ms="15555" status="PASS">
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@1f57539]" name="post_400" duration-ms="3976" started-at="2021-08-07T11:09:31 ICT" data-provider="getTestData400" finished-at="2021-08-07T11:09:35 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[, , , , , ]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postUser3_Excel -->
+        </test-method> <!-- post_400 -->
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@1f57539]" name="post_400" duration-ms="483" started-at="2021-08-07T11:09:35 ICT" data-provider="getTestData400" finished-at="2021-08-07T11:09:35 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[, , , , , ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_400 -->
+        <test-method status="PASS" signature="post_400(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:API.AssertionsinAPITesting@1f57539]" name="post_400" duration-ms="545" started-at="2021-08-07T11:09:35 ICT" data-provider="getTestData400" finished-at="2021-08-07T11:09:36 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[, , , , , ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_400 -->
       </class> <!-- API.AssertionsinAPITesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
