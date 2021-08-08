@@ -5,10 +5,11 @@ import java.util.List;
 
 public class TestUtil {
 	// Fix excel url
-	static String excelUrl = "C:\\Users\\Admin\\eclipse-workspace\\TestAPI\\src\\resource\\Demo1.xlsx";
+	static String excelUrl = "C:\\Users\\Admin\\eclipse-workspace\\TestAPI\\src\\resource\\Demo1.xlsx";/* cần thay đổi URL này*/
 	static Xls_Reader reader;
 
 	// Trường hợp statuscode = 200
+	//Nếu có sửa tên sheet trong excel thì cần sửa statusCode_200 thành tên tương ứng
 	// Read Excel
 	public static ArrayList<Object[]> getDataFromExcel200() {
 		return handleReadDataFromSheet("statusCode_200");
@@ -35,7 +36,7 @@ public class TestUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		int rowNum = reader.getCellRowNum(sheetName, "ID", cellValue);
+		int rowNum = reader.getCellRowNum(sheetName, "ID", cellValue);/*dùng cột ID để xác định row*/
 		reader.setCellData(sheetName, columnNameValue, rowNum, statusValue);
 	}
 
@@ -68,7 +69,7 @@ public class TestUtil {
 			Object ab[] = { idSheet, firstName, lastName, email, programme, coursesList };
 			myData.add(ab);
 		}
-
+//Cần sửa các param ở đây trong đó courses1 và courses2 là 2 phần tư của mảng coursesList
 		return myData;
 	}
 

@@ -22,7 +22,7 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class AssertionsinAPITesting {
+public class Student_POST {
 
 //	@Test
 //	public void teststructe()throws IOException{			
@@ -89,7 +89,7 @@ public class AssertionsinAPITesting {
 //				.body("message", Matchers.equalTo("No message available")).body("error", Matchers.equalTo("Not Found"));
 //	}
 
-	// TestCase cho trường hợp statusCode = 200
+	// TestCase cho trường hợp statusCode = 201
 
 	@DataProvider
 	public Iterator<Object[]> getTestData201() {
@@ -105,7 +105,10 @@ public class AssertionsinAPITesting {
 		requestBodyParams(idSheet, "statusCode_200", firstName, lastName, email, programme, coursesList, 201);
 	}
 
-	// TestCase cho trường hợp statusCode = 400
+	// TestCase cho trường hợp statusCode = 500
+	//Ở đây chỉ cần nhập data vào sheet statusCode_400 trong excel là được, cần sửa các param truyền lên ở dòng requestBodyParams(....)
+	// Vì courses là 1 mảng có 2 phần tử nên trong exce sẽ tạo ra 2 cột courses1 và courses2 sau đó từ kết quả đọc được ở excel sẽ lưu vào coursesList
+	//Lúc gọi cũng sẽ gọi ra coursesList
 	@DataProvider
 	public Iterator<Object[]> getTestData400() {
 		TestUtil.getDataFromExcel400();
@@ -120,6 +123,7 @@ public class AssertionsinAPITesting {
 		requestBodyParams(idSheet, "statusCode_400", firstName, lastName, email, programme, coursesList, 500);
 	}
 
+	//Đây là hàm viết chung từ đó chỉ cần thay statusCode muốn test là được giảm thiểu được code
 	@SuppressWarnings("unchecked")
 	public void requestBodyParams(String idSheet, String sheetName, String firstName, String lastName, String email,
 			String programme, List<String> coursesList, int statusCode) {
@@ -129,11 +133,13 @@ public class AssertionsinAPITesting {
 		requestParams.put("email", email);
 		requestParams.put("programme", programme);
 		requestParams.put("courses", coursesList);
+//Càn thay đổi các param truyền lên ở đoạn này cùng với file TestUtil
 
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json").body(requestParams.toString());
 
 		Response response = request.post("http://localhost:8080/student");
+		//Cần thay đổi link URL cho đúng với API POST cần test
 
 		System.out.println("PostUsers_Excel response is: " + response.asString());
 		System.out.println("PostUsers_Excel response statusCOde: " + response.statusCode());
@@ -148,4 +154,8 @@ public class AssertionsinAPITesting {
 		TestUtil.writeDataToExcelToSheetName(sheetName, idSheet, response.asString(), "Response");
 	}
 
+	/*Ghi vào excel bằng cách dùng cột ID để xác định được row sau đó so sánh statusCode mong muốn với trả về có khớp với nhau
+	không nếu khớp thì trả về OK không thì trả về NG
+	Ghi response trả về: ResponseCode và respose mục đích có thể gửi file này cho KH nếu cần
+	*/
 }
